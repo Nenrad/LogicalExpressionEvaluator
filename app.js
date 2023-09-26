@@ -1,15 +1,3 @@
-const andSymb = "\u22C0";
-
-const orSymb = "\u22C1";
-
-const xorSymb = "\u2295";
-
-const notSymb = "\u223c";
-
-const conditionalSymb = "\u21D2";
-
-const biconditionalSymb = "\u21d4";
-
 // initialize object containing logic of application
 var Logicker = Logicker || {};
 
@@ -471,21 +459,6 @@ i.e. for variables p and q, it returns [[true, true], [true, false], [false, tru
     return combinations;
   }
 
-  // function rotateMatrix(arr) {
-  //   height = arr.length;
-  //   width = arr[0].length;
-  //   let rotatedArr = Array.from({ length: width }).map(() =>
-  //     Array.from({ length: height }).fill(0)
-  //   );
-  //   for (let i = 0; i < height; i++) {
-  //     for (let j = 0; j < width; j++) {
-  //       console.log(arr[i][j]);
-  //       rotatedArr[j][i] = arr[i][j];
-  //     }
-  //   }
-  //   return rotatedArr;
-  // }
-
   function appendEachRow(arr1, arr2) {
     return arr1.map((el, index) => {
       return [...el, arr2[index]];
@@ -507,5 +480,3 @@ i.e. for variables p and q, it returns [[true, true], [true, false], [false, tru
     evaluate: evaluate,
   };
 };
-
-("(A∨B)⇒C");
